@@ -7,9 +7,9 @@
   "license": "MIT",
   "scripts": {
     "build": "rimraf dist && tsc -p tsconfig.build.json",
-    "start": "NODE_ENV=production node dist/index.js",
-    "dev": "ts-node-dev --respawn --ignore-watch node_modules --transpile-only src/index.ts",
-    "test": "jest --no-cache --runInBand --detectOpenHandles --coverage",
+    "start": "NODE_ENV=production node dist/server.js",
+    "dev": "ts-node-dev --respawn --ignore-watch node_modules --transpile-only src/server.ts",
+    "test": "jest --no-cache --runInBand --detectOpenHandles --coverage --passWithNoTests",
     "prepare": "husky install"
   },
   "devDependencies": {

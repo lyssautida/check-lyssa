@@ -14,8 +14,8 @@ model User {
   id String @id
   avatarUrl String @map("avatar_url")
   githubToken String @map("github_token")
+  username String @unique
   createdAt DateTime @default(now()) @map("created_at")
-  updatedAt DateTime @updatedAt @map("updated_at ")
+  updatedAt DateTime @updatedAt @map("updated_at")
   @@map("users")
 }
-
